@@ -1,0 +1,38 @@
+body {
+    font-family: Arial;
+}
+#item {
+    border-radius: 5px;
+    border: 1px;
+    border-style: solid;
+    border-color: lightgrey;
+    padding: 5px;
+    width: 250px;
+}
+
+#addButton {
+    background-color: lightgrey;
+    border: 0px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#list {
+    text-transform: capitalize;
+    margin: auto;
+    text-align: center;
+}
+
+#list > div {
+    background-color: rgb(243, 243, 243);
+    margin: 7px auto;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: left;
+    width: 250px;
+    transition: 0.3s;
+}
+
+#list > div:hover {
+    background-color: lightgrey;
+}
