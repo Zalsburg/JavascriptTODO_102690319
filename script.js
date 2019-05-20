@@ -19,9 +19,22 @@ function addButtonClicked() {
     checkbox.setAttribute("type", "checkbox");
     checkbox.setAttribute("class", "checkbox");
     itemInput.appendChild(checkbox);
+
+    var x = document.createElement("button");
+    x.setAttribute("class", "removeItem");
+    x.appendChild(document.createTextNode("X"));
+    itemInput.appendChild(x);
+
+    x.onclick = removeItemClicked;
 }
 
 function clearButtonClicked() {
-    var clearItem = document.getElementById("taskList");
-    clearItem.parentNode.removeChild(clearItem);
+    var clearAllItems = document.getElementById("taskList");
+    clearAllItems.parentNode.removeChild(clearAllItems);
+}
+
+
+
+function removeItemClicked(e) {
+    e.target.parentNode.remove();
 }

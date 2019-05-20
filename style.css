@@ -38,12 +38,23 @@ body {
     text-align: left;
     width: 250px;
     transition: 0.3s;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-#list > div:hover {
+#list > div > div:hover {
     background-color: lightgrey;
 }
 
+.removeItem {
+    padding: 0px;
+    border: 0px;
+    background-color: rgb(243, 243, 243);
+    color: red;
+    font-weight: bold;
+}
+
 .checkbox {
-    float: right;
+    align-self: flex-end;
 }
