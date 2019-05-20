@@ -10,11 +10,15 @@ function addButtonClicked() {
     var listItem = item.value;
     console.log(listItem);
     var itemInput = document.createElement("div");
-    //itemInput.setAttribute("id", "task");
     itemInput.appendChild(document.createTextNode(listItem));
     taskList.appendChild(itemInput);
 
     document.getElementById("item").value = "";
+
+    var checkbox = document.createElement("input");
+    checkbox.setAttribute("type", "checkbox");
+    checkbox.setAttribute("class", "checkbox");
+    itemInput.appendChild(checkbox);
 }
 
 function clearButtonClicked() {
