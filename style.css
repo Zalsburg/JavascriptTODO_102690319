@@ -17,13 +17,20 @@ body {
     border-radius: 5px;
 }
 
+#clearButton {
+    background-color: lightgrey;
+    border: 0px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 #list {
     text-transform: capitalize;
     margin: auto;
     text-align: center;
 }
 
-#list > div {
+#list > div > div {
     background-color: rgb(243, 243, 243);
     margin: 7px auto;
     border-radius: 5px;
